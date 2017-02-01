@@ -1,25 +1,30 @@
-
-
-def merge(li1, li2):
-	i,j=0,0
-	listfinal=list()
-	while i<len(li1) & j<len(li2):
-		if li1[i]<li1[j]:
-			listfinal.append(li1[i])
-			i=i+1
+def merge(left, right):
+	sorted_list=[]
+	left_ind,right_ind=0,0
+	while left_ind<len(left1) and right_ind<len(right):
+		
+		if left1[left_ind] < right[right_ind]:
+			sorted_list.append(left1[left_ind])
+			left_ind+=1
 		else:
-			listfinal.append(li2[j])
-			j=j+1
-	listfinal=listfinal.append(li1[i:])
-	return listfinal
+			sorted_list.append(right[right_ind])
+			right_ind+=1
+	if left1:
+		sorted_list.extend(left1[left_ind:])
+	if right:
+		sorted_list.extend(right[right_ind:])
+	return sorted_list
 
 def merge_sort(list1):
-	if len(list1)==1:
+	if len(list1)<=1:
 		return list1
 	i = len(list1)//2
-	left_sub_list=merge_sort(list1[:i])
-	right_sub_list1=merge_sort(list1[i:])
-	merge(left_sub_list,right_sub_list1)
+	left=list1[:i]
+	right=list1[i:]
+	left=merge_sort(left)
+	right=merge_sort(right)
+
+	return list(merge(left,right))
 
 def main():
 	num_array = list()
