@@ -16,9 +16,9 @@ def merge(left, right):
 			sorted_list.append(right[right_ind])
 			right_ind+=1
 	if left:
-		sorted_list.append(left[left_ind:])
+		sorted_list.extend(left[left_ind:])
 	if right:
-		sorted_list.append(right[right_ind:])
+		sorted_list.extend(right[right_ind:])
 	return sorted_list
 
 # The function makes a recursive call to itself to break the main unsorted list to smaller lists
