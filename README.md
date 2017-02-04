@@ -9,6 +9,8 @@ As of now the repository contains:-
 
 3) Merge sort
 
+4) Heap sort
+
 NOTE-
 In case you're running the python script on sublime text you would need a package named sublimeREPL for taking the input in the python script.
 The link for the package is:- https://packagecontrol.io/installation
