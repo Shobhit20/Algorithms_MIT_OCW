@@ -2,6 +2,7 @@
 The repository contains the implementation of the algorithms taught in the MIT(OCW) lecture series of algorithms.
 The algorithms are implemented on python 3.5.
 As of now the repository contains:-
+
 1) Peak finding for 1-D and 2-D array
 2) Vanilla insertion sort
 3) Merge sort
