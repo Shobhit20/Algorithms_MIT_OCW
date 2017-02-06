@@ -4,9 +4,13 @@ The algorithms are implemented on python 3.5.
 As of now the repository contains:-
 
 1) Peak finding for 1-D and 2-D array
+
 2) Vanilla insertion sort
+
 3) Merge sort
+
 4) Heap sort
+
 5) BST sort
 
 NOTE-
