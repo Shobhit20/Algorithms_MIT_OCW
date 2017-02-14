@@ -15,7 +15,7 @@ As of now the repository contains:-
 
 6) AVL Trees from BST
 
-7) Counting sort
+7) Counting and Radix sort
 
 NOTE-
 In case you're running the python script on sublime text you would need a package named sublimeREPL for taking the input in the python script.
