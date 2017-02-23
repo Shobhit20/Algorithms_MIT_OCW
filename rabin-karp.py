@@ -1,5 +1,9 @@
+#---------------------RABIN-KARP ALGO-------------------
+''' The algorithm is helpful in finding substring in a large text input.
+The average and best case running time of the Rabin-Karp algorithm is 
+O(n+m), but its worst-case time is O(nm). '''
 
- 
+# The funcion finds the hash value of patterns and if hash value matches then the function compares all the elements of the pattern one by one to return the index at which the patter is found
 def search_for_pat(pat, txt,d, q):
     M = len(pat)
     N = len(txt)
