@@ -1,5 +1,5 @@
 
-
+import random
 def counting_sort(array, maxval):
     """in-place counting sort"""
     m = maxval + 1
@@ -15,12 +15,7 @@ def counting_sort(array, maxval):
     return array
 
 def main():
-    num_array = list()
-    num = input("Enter the no. of elements in the array:- ")    # the length of the number list
-    print ('Feed the numbers in array:- ')  # input of the numbers
-    for i in range(int(num)):
-        n = input("number :")
-        num_array.append(int(n))    #input number is appended to the list
+    num_array = random.sample(range(1, 100),30)   #input number is appended to the list
     num_array = counting_sort(num_array,max(num_array))
     print(num_array)
 
