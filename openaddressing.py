@@ -1,9 +1,15 @@
+'''The file contains the implementation of open addressing using 
+array data structure to reduce the complexity of array search which
+is O(n) in general case'''
+
 import numpy as np
 
+# hash function for open addressing
 def hashing(item, size, val):
 	i = (item%11 + val*(item%10 + val))%size
 	return i
 
+# inserting a value to the array
 def insert(value, arr):
 	key = hashing(value, len(arr[0]), 0)
 	if arr[1][key]>0:
@@ -22,7 +28,7 @@ def insert(value, arr):
 		arr[1][key] = 1
 
 	
-
+# searching a value through the array
 def search(value, arr):
 	for i in range(len(arr[0])):
 		key = hashing(value, len(arr[0]), i)
@@ -34,6 +40,8 @@ def search(value, arr):
 			break
 		else:
 			print "Searching for next value"
+
+# delete a particular value from the array
 def delete(value, arr):
 	for i in range(len(arr[0])):
 		key = hashing(value, len(arr[0]), i)
